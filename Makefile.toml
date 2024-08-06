@@ -1,0 +1,4 @@
+[tasks.serve]
+cwd = "presentations"
+description = "Presentation serve"
+script = "yarn serve"

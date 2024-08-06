@@ -1,0 +1,13 @@
+{
+  "markdown.marp.themes": [
+    "presentations/src/styles/fabomb.css",
+    "presentations/src/styles/reset.css",
+    "presentations/src/styles/variables.css",
+  ],
+  "cSpell.words": [
+    "fabomb"
+  ],
+  "cssVariables.lookupFiles": [
+    "presentations/src/**/*.css",
+  ]
+}
