@@ -1,91 +1,91 @@
-/**
- * @theme fabomb
- * @size 16:9 1280px 720px
- * @size 4:3 960px 720px
- * @size 16:10 1280px 800px
- * @size uwide 1680px 720px
- */
-
 @import "reset";
 @import "variables";
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 
-section {
+#slide-content {
   font-family: "Noto Serif JP", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   display: flex;
   flex-direction: column;
-  padding: var(--header-height) var(--side-padding) 0 var(--side-padding);
-  width: 1280px;
-  height: 720px;
   letter-spacing: 2px;
   font-size: var(--default-font-size);
-  cursor: url("../../assets/laser-red.png"), pointer;
+  cursor: url("../public/laser-red.png"), pointer;
 }
 
-section::after {
-  color: var(--text-sub-color);
-  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
-  font-size: var(--mini-font-size);
-  bottom: calc(var(--footer-height) / 2 - 2px);
-  transform: translateY(calc(var(--mini-font-size) / 2));
-  padding-bottom: 0;
+.slidev-layout {
+  width: 100%;
+  height: 100%;
+  padding: var(--header-height) var(--side-padding) 0 var(--side-padding);
 }
 
-section strong {
+#slide-content strong {
   color: var(--accent-color)
 }
 
-section.title {
+.slidev-layout.title {
   display: flex;
   position: relative;
-  display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-section.accent {
-  display: flex;
-  justify-content: center;
-  padding-bottom: var(--footer-height);
-}
-
-section.title::before, section.accent::before {
+.slidev-layout.title::before, .slidev-layout.accent::before {
   content: '';
   display: block;
   position: absolute;
-  width: 542px; height: 542px;
+  width: 342px; height: 342px;
   z-index: -1;
 }
 
-section.title::before {
+.slidev-layout.title::before {
   left: 0px; top: 0px;
   background: linear-gradient(-225deg, var(--main-color) 50%, transparent 50%);
 }
 
-section.accent::before {
+.slidev-layout.title .title-container {
+  position: relative;
+  margin-bottom: var(--footer-height);
+  transform: translateX(-24px);
+  height: fit-content;
+  padding-left: 12px;
+  border-left: solid 6px var(--text-sub-color);
+}
+
+.slidev-layout.title h1 {
+  position: relative;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 24px;
+  padding: 0;
+}
+
+.slidev-layout.title p {
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 48px;
+  border-top: solid 1px var(--text-sub-color);
+}
+
+.slidev-layout.accent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: var(--footer-height);
+  height: 100%;
+  width: 100%;
+}
+
+.slidev-layout.accent::before {
   right: 0px; top: 0px;
   background: linear-gradient(-135deg, var(--main-color) 50%, transparent 50%);
 }
 
-section.title h1 {
-  position: relative;
-  background-color: transparent;
-  color: var(--text-color);
-  margin-left: 420px;
-  padding: 0 0 0 18px;
-  margin-bottom: var(--footer-height);
-  height: fit-content;
-  border-left: solid 12px var(--text-sub-color) ;
-}
-
-section.title header {
-  color: var(--text-sub-color);
-}
-
-section.split table {
+#slide-content.split table {
   background-color: red;
   width: 100%;
   height: 100%;
@@ -111,9 +111,10 @@ footer {
   bottom: 0;
   left: 0;
   font-size: var(--mini-font-size);
-  padding-left: var(--side-padding);
+  padding: 0 var(--side-padding);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
@@ -163,6 +164,10 @@ blockquote {
   left: 0;
   padding: 8px var(--side-padding);
   bottom: var(--footer-height);
+}
+
+blockquote a {
+  color: var(--a-color);
 }
 
 blockquote::before {

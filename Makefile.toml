@@ -1,4 +1,4 @@
-[tasks.serve]
+[tasks.dev]
 cwd = "presentations"
 description = "Presentation serve"
-script = "yarn serve"
+script = "yarn dev src/pages/${@}/index.md"

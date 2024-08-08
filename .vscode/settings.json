@@ -1,13 +1,14 @@
 {
-  "markdown.marp.themes": [
-    "presentations/src/styles/fabomb.css",
-    "presentations/src/styles/reset.css",
-    "presentations/src/styles/variables.css",
-  ],
   "cSpell.words": [
     "fabomb"
   ],
   "cssVariables.lookupFiles": [
     "presentations/src/**/*.css",
-  ]
+  ],
+  "slidev.include": [
+    "**/slides.md",
+    "presentations/pages/wasm/index.md"
+  ],
+  "recommendations": ["antfu.slidev"],
+  "slidev.port": 3030
 }

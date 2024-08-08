@@ -1,23 +1,32 @@
 ---
-marp: true
-theme: fabomb
-# size: 16:9
-header: 2024 / 8 / 11<br>wasm より豊かなユーザー体験を提供する
-footer: ©FaBomb
-paginate: true
-math: katex
+theme: ../../
+author: FaBomb
+layout: title
+colorSchema: light
+aspectRatio: 16/9
+title: GPUをフル活用したアプリ開発
 ---
 
-<!-- _class: title -->
+# GPUをフル活用したアプリ開発
 
-# 脱Web View<br>より豊かなユーザー体験を提供する
+ネイティブアプリとWebアプリの利点を活かした次世代アプリ開発
 
 ---
+layout: split
+---
+
+<template v-slot:default>
 
 # 自己紹介
 
-<!-- _class: split -->
-<!-- キーワード：sa, sb, fw -->
+</template>
+
+<template v-slot:left>
+
+aaa
+
+</template>
+<template v-slot:right>
 
 |left|center|right|
 |:-|:-:|-:|
@@ -25,11 +34,11 @@ math: katex
 |even|123,456|2,000|
 |odd |999,999|-50,000|
 
+</template>
+
 ---
 
 # WebViewとは
-
-スライド2
 
 - One
 - Two
@@ -70,14 +79,14 @@ math: katex
 - ネイティブのリソースをフル活用しつつ、Webブラウザでも動作するアプリケーション開発
 
 ---
-
-<!-- _class: accent -->
+layout: accent
+---
 
 ## ブラウザでそんな高負荷なこと必要ないのでは？
 
 ---
-
-<!-- _class: accent -->
+layout: accent
+---
 
 ## Webアプリ開発が一般化してきた
 

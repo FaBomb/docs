@@ -2,15 +2,16 @@
 
 :root {
   --main-color: #1894ec;
+  --a-color: #1d7ec3;
   --text-color: #585858;
-  --text-sub-color: #8b8a8a;
+  --text-sub-color: #9d9d9d;
   --text-contrast-color: #ebebeb;
   --accent-color: #ee7d31;
   --bg-color: #f6f6f6;
   --bg-sub-color: #eaeaea;
   --side-padding: 42px;
-  --header-height: 84px;
+  --header-height: 64px;
   --footer-height: 42px;
-  --mini-font-size: 16px;
-  --default-font-size: 24px;
+  --mini-font-size: 12px;
+  --default-font-size: 18px;
 }

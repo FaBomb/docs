@@ -1,12 +1,18 @@
 {
   "name": "presentations",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "type": "module",
+  "private": true,
   "scripts": {
-    "serve": "npx @marp-team/marp-cli -s ./src"
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
   },
-  "devDependencies": {
-    "@marp-team/marp-cli": "^3.4.0"
+  "dependencies": {
+    "@slidev/cli": "^0.49.24",
+    "@slidev/types": "^0.49.24",
+    "vue": "^3.4.33"
+  },
+  "slidev": {
+    "colorSchema": "light"
   }
 }
